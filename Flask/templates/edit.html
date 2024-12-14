@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+{% block body %}
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('{{ url_for('static', filename='img/home-bg.jpg') }}')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+             <h1 style="color: black;" >Welcome here to enter the new posts</h1>
+              <span style="color: black; class="subheading" >Manage and control your posts and blogs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+           
+    <div class="container">
+           
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+
+          <h1> Add/Edit Post </h1>
+
+
+<form id="contactForm" action="/edit" method="post" data-sb-form-api-token="API_TOKEN">
+                                <div class="form-floating">
+                                    <input class="form-control" name="title" id="title" type="text" placeholder="Enter your title..." data-sb-validations="required"  />
+                                    <label for="title">Title</label>
+                                    <div class="invalid-feedback" data-sb-feedback="name:required">A title is required.</div>
+                                </div>
+                                <div class="form-floating">
+                                    <input class="form-control" name="tagline" id="tagline" type="text" placeholder="Enter your tagline..." data-sb-validations="required,email" />
+                                    <label for="tagline">Tag line</label>
+                                    <div class="invalid-feedback" data-sb-feedback="email:required">An tag line is required.</div>
+                                </div>
+                                <div class="form-floating">
+                                    <input class="form-control" name="slug" id="slug" type="text" placeholder="Enter your slug.." data-sb-validations="required" />
+                                    <label for="slug">Slug Number</label>
+                                    <div class="invalid-feedback" data-sb-feedback="phone:required">A slug number is required.</div>
+                                </div>
+
+                                <div class="form-floating">
+                                    <input class="form-control" name="content" id="content" type="text" placeholder="Enter your content..." data-sb-validations="required" />
+                                    <label for="content">Content</label>
+                                    <div class="invalid-feedback" data-sb-feedback="phone:required">A content is required.</div>
+                                </div>
+
+
+                                 <div class="form-floating">
+                                    <input class="form-control" name="img_file" id="img_file" type="tel" placeholder="Enter your image..." data-sb-validations="required" />
+                                    <label for="img_file">Image</label> 
+                                    <div class="invalid-feedback" data-sb-feedback="phone:required">AImage is required.</div>
+                                </div>
+                                <!-- Submit Button-->
+                                <button class="btn btn-primary " id="submitButton" type="submit">Submit</button>
+                            </form>
+                            <br>
+                               <a href="/dashboard"> <button class=" btn-primary btn">Dash Board<button></a> 
+                                    <a href="/logout"> <button class=" btn-primary btn">Log Out <button></a>
+        </div>
+      </div>
+    </div>
+    {% endblock %}

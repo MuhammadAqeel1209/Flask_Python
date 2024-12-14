@@ -1,0 +1,18 @@
+{
+    "params": {
+        "local_server": "True",
+        "local_uri": "mysql://root:@localhost/codingthunder",
+        "prod_uri": "mysql://root:@localhost/codingthunder",
+        "fb_url": "https://facebook.com/codingthunder",
+        "tw_url": "https://twitter.com/codingthunder",
+        "gt_url": "https://github.com/codingthunder",
+        "blog_name": "The Reliance Thunder Blog",
+        "gmail_user": "aqeelshakeel892@gmail.com",
+        "gmail_password": "Aqeel892##",
+        "login_image": "login.svg",
+        "no_of_posts" : 2,
+        "admin_user": "admin",
+        "admin_password": "12345",
+        "upload_location": "E:\\Python\\Flask"
+    }
+}
